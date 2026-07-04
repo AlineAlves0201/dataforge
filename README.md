@@ -31,3 +31,4 @@ python -m venv .venv
 python src\main.py
 ```
 
+teste
