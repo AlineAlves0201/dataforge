@@ -11,10 +11,14 @@
             "id": "9ff65968176af378",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/kanban/04-versionar-primeira-entrega.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "04-versionar-primeira-entrega"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/KANBAN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos"
+              "title": "Links inversos para KANBAN"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/KANBAN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída"
+              "title": "Links de saída para KANBAN"
             }
           },
           {
@@ -150,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "docs/KANBAN.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário"
+              "title": "Sumário de KANBAN"
             }
           }
         ]
@@ -173,11 +180,41 @@
       "daily-notes:Abrir a nota de hoje": false,
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
-      "bases:Criar nova base": false
+      "bases:Criar nova base": false,
+      "obsidian-kanban:Create new board": false
     }
   },
   "active": "9ff65968176af378",
   "lastOpenFiles": [
-    "README.md"
+    "docs/KANBAN.md",
+    "docs/kanban/03-rodar-script-inicial.md",
+    "Pasted image 20260710111818.png",
+    "docs/kanban/02-configurar-identidade-git.md",
+    "Pasted image 20260710110133.png",
+    "docs/kanban/01-validar-ambiente-local.md",
+    "Pasted image 20260710104713.png",
+    "docs/kanban/30-planejar-proximas-etapas.md",
+    "docs/kanban/29-gravar-parquet-particionado.md",
+    "docs/kanban/28-criar-camadas-bronze-silver-gold.md",
+    "docs/kanban/27-instalar-pyspark.md",
+    "docs/kanban/26-rodar-pipeline-em-container.md",
+    "docs/kanban/25-criar-docker-compose.md",
+    "docs/kanban/24-criar-dockerfile.md",
+    "docs/kanban/23-criar-reprocessamento-simples.md",
+    "docs/kanban/22-validar-dados-de-entrada.md",
+    "docs/kanban/21-configurar-logging.md",
+    "docs/kanban/20-adicionar-testes-basicos.md",
+    "docs/kanban/19-criar-funcoes-reutilizaveis.md",
+    "docs/kanban/18-separar-configuracoes.md",
+    "docs/kanban/17-refatorar-estrutura-src.md",
+    "docs/kanban/16-consultar-dados-com-sql.md",
+    "docs/kanban/15-inserir-dados-via-python.md",
+    "docs/kanban/14-modelar-tabelas-raw-trusted.md",
+    "docs/kanban/13-instalar-postgresql-ou-docker.md",
+    "docs/kanban/12-documentar-aprendizados-api.md",
+    "docs/kanban/11-replicar-pipeline-segunda-api.md",
+    "docs/kanban/10-escolher-segunda-api.md",
+    "docs/kanban/09-tratar-erros-api.md",
+    "docs/kanban"
   ]
 }
