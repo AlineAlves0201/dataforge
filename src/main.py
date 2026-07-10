@@ -1,39 +1,24 @@
-from __future__ import annotations
-
-import json
-from pathlib import Path
+from api_client import get_pokemon
+from file_writer import save_json
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-RAW_DATA_DIR = PROJECT_ROOT / "data" / "raw"
-OUTPUT_FILE = RAW_DATA_DIR / "user_profile.json"
+def main():
+    # Define the pokemon name
+    pokemon_name = "pikachu"
 
+    # Fetch data from PokeAPI
+    pokemon = get_pokemon(pokemon_name)
 
-def ask_user_profile() -> dict[str, int | str]:
-    name = input("Digite seu nome: ").strip()
-    age = int(input("Digite sua idade: ").strip())
+    # Save raw API response as JSON
+    output_path = f"data/raw/pokemon_{pokemon_name}.json"
+    save_json(pokemon, output_path)
 
-    return {
-        "name": name,
-        "age": age,
-        "estimated_days_lived": age * 365,
-    }
-
-
-def save_json(data: dict[str, int | str], output_file: Path) -> None:
-    output_file.parent.mkdir(parents=True, exist_ok=True)
-    output_file.write_text(
-        json.dumps(data, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
-
-
-def main() -> None:
-    profile = ask_user_profile()
-    save_json(profile, OUTPUT_FILE)
-    print(f"Arquivo salvo em: {OUTPUT_FILE}")
+    # Display main fields from the response
+    print(f"Name: {pokemon['name']}")
+    print(f"ID: {pokemon['id']}")
+    print(f"Height: {pokemon['height']}")
+    print(f"Weight: {pokemon['weight']}")
 
 
 if __name__ == "__main__":
     main()
-
